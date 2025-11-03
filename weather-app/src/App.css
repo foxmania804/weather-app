@@ -1,0 +1,42 @@
+@import "tailwindcss";
+
+.mainCard {
+  height: 12rem; /* Set a height for the div to display the background */
+  
+  /* Add other styling as needed, e.g., padding, color, etc. */
+  color: white; /* Example: text color for readability against the background */
+  text-align: center;
+  
+}
+
+@font-face {
+  font-family: "bricolage-grotesque";
+  src: url("../assets/fonts/Bricolage_Grotesque/BricolageGrotesque-VariableFont_opsz\,wdth\,wght.ttfs")format("truetype");
+  font-weight: normal; /* Optional: Define font weight if applicable */
+  font-style: normal;
+}
+@font-face {
+  font-family: "dm-sans";
+  src: url("../assets/fonts/DM_Sans/DMSans-VariableFont_opsz\,wght.ttf")format("truetype");
+  font-weight: normal; /* Optional: Define font weight if applicable */
+  font-style: normal;
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+        width: 4px;
+        height: 4px;
+    }
+
+    .custom-scrollbar::-webkit-scrollbar-track {
+        background-color: #25253F;
+        border-radius: 4px;
+    }
+
+    .custom-scrollbar::-webkit-scrollbar-thumb {
+        background-color: #353453;
+        border-radius: 4px;
+    }
+
+    .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+        background-color: #353453;
+    }
