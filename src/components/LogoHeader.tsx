@@ -64,7 +64,7 @@ export const LogoHeader: React.FC<LogoHeaderProps> = ({
   return (
     <div className="mt-4 flex flex-row justify-between items-center relative">
       <img
-        src="../assets/images/logo.svg"
+        src="/src/assets/images/logo.svg"
         alt="logo"
         className="h-auto w-32 md:w-40 lg:w-40 xl:w-40 2xl:w-40"
       />
@@ -75,7 +75,7 @@ export const LogoHeader: React.FC<LogoHeaderProps> = ({
         className="text-[#bdbcc8] bg-[#25253e] px-3 py-1.5 gap-2 rounded-lg text-sm text-center inline-flex items-center justify-center focus:outline-none focus:ring-1 focus:ring-offset-2"
         type="button"
       >
-        <img src="../assets/images/icon-units.svg" alt="units" />
+        <img src="/src/assets/images/icon-units.svg" alt="units" />
         Units
         <svg
           className="w-2.5 h-2.5"
@@ -131,7 +131,7 @@ export const LogoHeader: React.FC<LogoHeaderProps> = ({
                         {i}
                         {i === getActiveUnit(item.sectionName) && (
                           <img
-                            src="../../assets/images/icon-checkmark.svg"
+                            src="/src/assets/images/icon-checkmark.svg"
                             alt="selected unit"
                           />
                         )}

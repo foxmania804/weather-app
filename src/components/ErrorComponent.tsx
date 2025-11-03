@@ -15,7 +15,7 @@ export const ErrorMessage: React.FC<ErrorProps> = ({
   return (
     <div className="grid justify-items-center col flex-col">
       <img
-        src="../assets/images/icon-error.svg"
+        src="/src/assets/images/icon-error.svg"
         alt="Error"
         className="h-auto w-7 mt-10 mb-5"
       />
@@ -37,7 +37,7 @@ export const ErrorMessage: React.FC<ErrorProps> = ({
         className="flex flex-row text-[#a7a6c1] text-sm bg-[#25253F] rounded-md gap-2 px-3 py-2 mt-5"
       >
         <img
-          src="../assets/images/icon-retry.svg"
+          src="/src/assets/images/icon-retry.svg"
           alt="Retry"
           className="h-auto w-3"
         />

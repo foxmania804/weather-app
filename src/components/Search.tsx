@@ -134,7 +134,7 @@ export const Search: React.FC<SearchProps> = ({
             ) : searching ? (
               <li className="p-2 text-[#e7e9ec] text-sm flex flex-row gap-x-2">
                 <img
-                  src="../../assets/images/icon-loading.svg"
+                  src="/src/assets/images/icon-loading.svg"
                   alt="loading"
                   className="h-auto w-4"
                 />

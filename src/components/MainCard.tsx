@@ -18,7 +18,7 @@ export const MainCard: React.FC<MainCardProps> = ({
     <div
       className={`mainCard md:pt-18 lg:pt-18 xl:pt-18 2xl:pt-18 text-white ${
         country
-          ? "bg-[url('../assets/images/bg-today-large.svg')] bg-cover bg-no-repeat"
+          ? "bg-[url('/src/assets/images/bg-today-large.svg')] bg-cover bg-no-repeat"
           : "bg-[#25253F]"
       } w-full p-6 rounded-xl`}
     >
@@ -50,7 +50,7 @@ export const MainCard: React.FC<MainCardProps> = ({
       ) : (
         <div className="flex justify-center gap-4 mb-6 items-center flex-col">
           <img
-            src="../assets/images/icon-loading.svg"
+            src="/src/assets/images/icon-loading.svg"
             alt="loading"
             className="h-auto w-10"
           />
