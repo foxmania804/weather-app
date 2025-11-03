@@ -1,3 +1,5 @@
+import ErrorIcon from "../assets/images/icon-error.svg";
+import RetryIcon from "../assets/images/icon-retry.svg";
 interface ErrorProps {
   errorMessage: string;
   retry: boolean;
@@ -14,11 +16,7 @@ export const ErrorMessage: React.FC<ErrorProps> = ({
   };
   return (
     <div className="grid justify-items-center col flex-col">
-      <img
-        src="/src/assets/images/icon-error.svg"
-        alt="Error"
-        className="h-auto w-7 mt-10 mb-5"
-      />
+      <img src={ErrorIcon} alt="Error" className="h-auto w-7 mt-10 mb-5" />
       <h1
         style={{ fontFamily: "dm-sans" }}
         className="text-[#fdfdfc] text-4xl md:text-5xl lg:text-5xl xl:text-5xl 2xl:text-5xl font-bold"
@@ -36,11 +34,7 @@ export const ErrorMessage: React.FC<ErrorProps> = ({
         style={{ fontFamily: "dm-sans" }}
         className="flex flex-row text-[#a7a6c1] text-sm bg-[#25253F] rounded-md gap-2 px-3 py-2 mt-5"
       >
-        <img
-          src="/src/assets/images/icon-retry.svg"
-          alt="Retry"
-          className="h-auto w-3"
-        />
+        <img src={RetryIcon} alt="Retry" className="h-auto w-3" />
         Retry
       </button>
     </div>

@@ -1,4 +1,5 @@
 import { dayName, monthName } from "../constants/constants";
+import LoadingIcon from "../assets/images/icon-loading.svg";
 
 interface MainCardProps {
   cityName: string;
@@ -49,11 +50,7 @@ export const MainCard: React.FC<MainCardProps> = ({
         </div>
       ) : (
         <div className="flex justify-center gap-4 mb-6 items-center flex-col">
-          <img
-            src="/src/assets/images/icon-loading.svg"
-            alt="loading"
-            className="h-auto w-10"
-          />
+          <img src={LoadingIcon} alt="loading" className="h-auto w-10" />
           <p>Loading</p>
         </div>
       )}

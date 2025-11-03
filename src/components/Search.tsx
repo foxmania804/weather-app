@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
+import LoadingIcon from "../assets/images/icon-loading.svg";
 
 interface SearchProps {
   setCity: React.Dispatch<React.SetStateAction<string>>;
@@ -133,11 +134,7 @@ export const Search: React.FC<SearchProps> = ({
               ))
             ) : searching ? (
               <li className="p-2 text-[#e7e9ec] text-sm flex flex-row gap-x-2">
-                <img
-                  src="/src/assets/images/icon-loading.svg"
-                  alt="loading"
-                  className="h-auto w-4"
-                />
+                <img src={LoadingIcon} alt="loading" className="h-auto w-4" />
                 Search in Progress
               </li>
             ) : (

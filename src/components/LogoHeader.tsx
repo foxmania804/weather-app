@@ -1,5 +1,8 @@
 import { useEffect, useRef, useState } from "react";
 import { unitData } from "../constants/constants";
+import Logo from "../assets/images/logo.svg";
+import UnitIcon from "../assets/images/icon-units.svg";
+import CheckmarkIcon from "../assets/images/icon-checkmark.svg"
 
 interface LogoHeaderProps {
   metrics: boolean;
@@ -64,7 +67,7 @@ export const LogoHeader: React.FC<LogoHeaderProps> = ({
   return (
     <div className="mt-4 flex flex-row justify-between items-center relative">
       <img
-        src="/src/assets/images/logo.svg"
+        src={Logo}
         alt="logo"
         className="h-auto w-32 md:w-40 lg:w-40 xl:w-40 2xl:w-40"
       />
@@ -75,7 +78,7 @@ export const LogoHeader: React.FC<LogoHeaderProps> = ({
         className="text-[#bdbcc8] bg-[#25253e] px-3 py-1.5 gap-2 rounded-lg text-sm text-center inline-flex items-center justify-center focus:outline-none focus:ring-1 focus:ring-offset-2"
         type="button"
       >
-        <img src="/src/assets/images/icon-units.svg" alt="units" />
+        <img src={UnitIcon} alt="units" />
         Units
         <svg
           className="w-2.5 h-2.5"
@@ -130,10 +133,7 @@ export const LogoHeader: React.FC<LogoHeaderProps> = ({
                       <div className="flex flex-row justify-between">
                         {i}
                         {i === getActiveUnit(item.sectionName) && (
-                          <img
-                            src="/src/assets/images/icon-checkmark.svg"
-                            alt="selected unit"
-                          />
+                          <img src={CheckmarkIcon} alt="selected unit" />
                         )}
                       </div>
                     </a>

@@ -1,3 +1,12 @@
+import SunnyWeather from "../assets/images/icon-sunny.webp";
+import PartlyCloudyWeather from "../assets/images/icon-partly-cloudy.webp";
+import Overcast from "../assets/images/icon-overcast.webp";
+import Fog from "../assets/images/icon-fog.webp";
+import Drizzle from "../assets/images/icon-drizzle.webp";
+import Snowy from "../assets/images/icon-snow.webp";
+import Rain from "../assets/images/icon-rain.webp";
+import Storm from "../assets/images/icon-storm.webp";
+
 export const dayweatherMetrics = [
   { name: "Feels Like", key_name: "apparent_temperature", unit: "°" },
   { name: "Humidity", key_name: "relative_humidity_2m", unit: "%" },
@@ -76,33 +85,32 @@ export const options = {
   year: "numeric",
 };
 export const weatherCodes: { [key: number]: string } = {
-  0: "/src/assets/images/icon-sunny.webp",
-  1: "/src/assets/images/icon-partly-cloudy.webp",
-  2: "/src/assets/images/icon-partly-cloudy.webp",
-
-  3: "/src/assets/images/icon-overcast.webp",
-  45: "/src/assets/images/icon-fog.webp",
-  48: "/src/assets/images/icon-fog.webp",
-  51: "/src/assets/images/icon-drizzle.webp",
-  53: "/src/assets/images/icon-drizzle.webp",
-  55: "/src/assets/images/icon-drizzle.webp",
-  56: "/src/assets/images/icon-drizzle.webp",
-  57: "/src/assets/images/icon-drizzle.webp",
-  71: "/src/assets/images/icon-snow.webp",
-  73: "/src/assets/images/icon-snow.webp",
-  75: "/src/assets/images/icon-snow.webp",
-  77: "/src/assets/images/icon-snow.webp",
-  85: "/src/assets/images/icon-snow.webp",
-  86: "/src/assets/images/icon-snow.webp",
-  61: "/src/assets/images/icon-rain.webp",
-  63: "/src/assets/images/icon-rain.webp",
-  65: "/src/assets/images/icon-rain.webp",
-  66: "/src/assets/images/icon-rain.webp",
-  67: "/src/assets/images/icon-rain.webp",
-  80: "/src/assets/images/icon-rain.webp",
-  81: "/src/assets/images/icon-rain.webp",
-  82: "/src/assets/images/icon-rain.webp",
-  95: "/src/assets/images/icon-storm.webp",
-  96: "/src/assets/images/icon-storm.webp",
-  99: "/src/assets/images/icon-storm.webp",
+  0: SunnyWeather,
+  1: PartlyCloudyWeather,
+  2: PartlyCloudyWeather,
+  3: Overcast,
+  45: Fog,
+  48: Fog,
+  51: Drizzle,
+  53: Drizzle,
+  55: Drizzle,
+  56: Drizzle,
+  57: Drizzle,
+  71: Snowy,
+  73: Snowy,
+  75: Snowy,
+  77: Snowy,
+  85: Snowy,
+  86: Snowy,
+  61: Rain,
+  63: Rain,
+  65: Rain,
+  66: Rain,
+  67: Rain,
+  80: Rain,
+  81: Rain,
+  82: Rain,
+  95: Storm,
+  96: Storm,
+  99: Storm,
 };
